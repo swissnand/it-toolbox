@@ -255,7 +255,7 @@ Die Web-Version ohne Electron: `npm run web` und dann <http://localhost:8080> ö
 
 ### Automatische Releases
 
-Ein neuer Versions-Tag baut die DMG automatisch auf einem macOS-Server von GitHub und hängt sie an ein Release:
+Sobald die Versionsnummer in `package.json` erhöht und auf `main` hochgeladen wird, baut GitHub die DMG automatisch auf einem macOS-Server und veröffentlicht sie als Release. Alternativ per Tag:
 
 ```bash
 git tag v1.0.0
