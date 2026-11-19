@@ -63,6 +63,7 @@ function buildMenu() {
       role: 'help',
       label: 'Hilfe',
       submenu: [
+        { label: 'Website swissnand.com', click: () => shell.openExternal('https://swissnand.com') },
         { label: 'Projekt auf GitHub', click: () => shell.openExternal('https://github.com/swissnand/it-toolbox') },
         { label: 'Fehler melden', click: () => shell.openExternal('https://github.com/swissnand/it-toolbox/issues') },
       ],

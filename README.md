@@ -314,5 +314,5 @@ Ideen für neue Tools, Fehler oder Verbesserungen? Gerne als [Issue](https://git
 ---
 
 <div align="center">
-<sub>Gebaut mit ♥ in der Schweiz von <a href="https://github.com/swissnand"><b>SWISSNAND</b></a> · MIT-Lizenz</sub>
+<sub>Gebaut mit ♥ in der Schweiz von <a href="https://swissnand.com"><b>SWISSNAND</b></a> · <a href="https://swissnand.com">swissnand.com</a> · MIT-Lizenz</sub>
 </div>

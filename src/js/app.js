@@ -3,7 +3,7 @@
   'use strict';
   const { tools, CATEGORIES, icon, util } = window.TB;
   const { esc, store, copy } = util;
-  const VERSION = '1.0.0';
+  const VERSION = '1.0.1';
 
   const $ = (s) => document.querySelector(s);
   const view = $('#view');

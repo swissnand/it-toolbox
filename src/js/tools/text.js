@@ -60,8 +60,8 @@
     id: 'diff', name: 'Text-Vergleich (Diff)', glyph: '±', cat: 'text',
     desc: 'Zwei Texte oder Konfigurationen zeilenweise vergleichen.', keywords: 'diff compare vergleichen changes',
     render(root, U) {
-      root.innerHTML = `<div class="panel cols"><div class="field"><div class="label">Original</div><textarea id="a" spellcheck="false">server {\n  listen 80;\n  server_name swissnand.ch;\n  root /var/www/html;\n}</textarea></div>
-        <div class="field"><div class="label">Geändert</div><textarea id="b" spellcheck="false">server {\n  listen 443 ssl;\n  server_name swissnand.ch www.swissnand.ch;\n  root /var/www/html;\n}</textarea></div></div>
+      root.innerHTML = `<div class="panel cols"><div class="field"><div class="label">Original</div><textarea id="a" spellcheck="false">server {\n  listen 80;\n  server_name swissnand.com;\n  root /var/www/html;\n}</textarea></div>
+        <div class="field"><div class="label">Geändert</div><textarea id="b" spellcheck="false">server {\n  listen 443 ssl;\n  server_name swissnand.com www.swissnand.com;\n  root /var/www/html;\n}</textarea></div></div>
         <div class="panel"><div class="row" style="margin-bottom:10px"><h3 style="margin:0">Unterschiede</h3><span class="spacer"></span><label class="check"><input type="checkbox" id="ws"> Leerzeichen ignorieren</label><label class="check"><input type="checkbox" id="only"> Nur Änderungen</label><span id="sum"></span></div><div class="diff" id="out"></div></div>`;
       const run = () => {
         let a = U.q('#a').value, b = U.q('#b').value;
@@ -83,7 +83,7 @@
     render(root, U) {
       root.innerHTML = `<div class="panel"><div class="row"><span class="mono muted">/</span><input id="re" class="mono grow" value="(\\w+)@([\\w.-]+\\.\\w+)"/><span class="mono muted">/</span><input id="fl" class="mono" value="g" style="width:70px"/></div>
         <div class="row small" style="margin-top:8px">${[['g', 'global'], ['i', 'ignore case'], ['m', 'multiline'], ['s', 'dotAll'], ['u', 'unicode']].map(([f, l]) => `<label class="check"><input type="checkbox" data-f="${f}"> ${f} <span class="muted">${l}</span></label>`).join('')}</div><div id="msg"></div></div>
-        <div class="panel"><div class="field"><div class="label">Testtext <span class="hint" id="cnt"></span></div><textarea id="txt" spellcheck="false">Kontakt: info@swissnand.ch oder support@example.com\nKeine Adresse: hallo@welt</textarea></div>
+        <div class="panel"><div class="field"><div class="label">Testtext <span class="hint" id="cnt"></span></div><textarea id="txt" spellcheck="false">Kontakt: info@swissnand.com oder support@example.com\nKeine Adresse: hallo@welt</textarea></div>
         <div class="field"><div class="label">Treffer</div><div class="out" id="hl" style="white-space:pre-wrap"></div></div></div>
         <div class="cols"><div class="panel"><h3>Gruppen</h3><div id="grp"></div></div><div class="panel"><h3>Ersetzen</h3><input id="rep" class="mono" value="$1 [at] $2"/><div class="out" id="repOut" style="margin-top:10px"></div></div></div>`;
       const syncChecks = () => U.qa('[data-f]').forEach((c) => { c.checked = U.q('#fl').value.includes(c.dataset.f); });
@@ -185,7 +185,7 @@
         s = s.normalize('NFKD').replace(/[̀-ͯ]/g, '');
         if (U.q('#low').checked) s = s.toLowerCase();
         const slug = s.replace(/[^a-zA-Z0-9]+/g, sep).replace(new RegExp(`^\\${sep}+|\\${sep}+$`, 'g'), '');
-        U.q('#res').innerHTML = U.kv([['Slug', slug], ['Dateiname', slug + '.md'], ['URL', 'https://swissnand.ch/' + slug]]);
+        U.q('#res').innerHTML = U.kv([['Slug', slug], ['Dateiname', slug + '.md'], ['URL', 'https://swissnand.com/' + slug]]);
       };
       ['#in', '#sep', '#low'].forEach((s) => U.q(s).addEventListener('input', run)); run();
     },

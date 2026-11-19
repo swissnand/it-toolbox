@@ -1,10 +1,10 @@
 {
   "name": "swissnand-it-toolbox",
   "productName": "SWISSNAND IT Toolbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "70 IT-Werkzeuge in einer macOS-App – offline, schnell, Open Source.",
   "main": "main.js",
-  "author": "SWISSNAND <hello@swissnand.ch>",
+  "author": "SWISSNAND (https://swissnand.com)",
   "license": "MIT",
   "homepage": "https://github.com/swissnand/it-toolbox",
   "repository": {

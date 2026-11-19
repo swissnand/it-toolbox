@@ -169,7 +169,7 @@
     id: 'url-parser', name: 'URL-Analyse', glyph: 'URL', cat: 'network',
     desc: 'URLs in Bestandteile zerlegen und Query-Parameter bearbeiten.', keywords: 'url parse query string params',
     render(root, U) {
-      root.innerHTML = `<div class="panel"><input id="in" class="mono" style="font-size:15px" value="https://user:pass@www.swissnand.ch:8443/pfad/seite.html?lang=de&id=42&tag=it#abschnitt"/><div id="msg"></div></div>
+      root.innerHTML = `<div class="panel"><input id="in" class="mono" style="font-size:15px" value="https://user:pass@www.swissnand.com:8443/pfad/seite.html?lang=de&id=42&tag=it#abschnitt"/><div id="msg"></div></div>
         <div class="cols"><div class="panel"><h3>Bestandteile</h3><div id="res"></div></div><div class="panel"><h3>Query-Parameter</h3><div id="qs"></div></div></div>`;
       const run = () => {
         U.q('#msg').innerHTML = '';
@@ -187,7 +187,7 @@
     desc: 'DNS-Einträge (A, AAAA, MX, TXT, NS, CNAME, SOA, CAA) via DNS-over-HTTPS abfragen.', keywords: 'dns nslookup dig mx txt spf dmarc record',
     render(root, U) {
       const TYPES = { A: 1, AAAA: 28, CNAME: 5, MX: 15, NS: 2, TXT: 16, SOA: 6, CAA: 257, SRV: 33, PTR: 12 };
-      root.innerHTML = `<div class="panel"><div class="row"><input id="dom" class="mono grow" value="swissnand.ch" placeholder="domain.ch" style="font-size:15px"/>
+      root.innerHTML = `<div class="panel"><div class="row"><input id="dom" class="mono grow" value="swissnand.com" placeholder="domain.ch" style="font-size:15px"/>
         <select id="type" style="width:auto">${['ALLE', ...Object.keys(TYPES)].map((t) => `<option>${t}</option>`).join('')}</select><button class="btn btn-primary" id="go">Abfragen</button></div>
         <div class="row small muted" style="margin-top:8px">Schnell: <button class="btn btn-sm btn-ghost" data-q="_dmarc">DMARC</button><button class="btn btn-sm btn-ghost" data-q="spf">SPF</button><button class="btn btn-sm btn-ghost" data-q="www">www</button> · Resolver: Cloudflare 1.1.1.1 (DoH)</div></div>
         <div class="panel"><div id="res"><span class="muted">Domain eingeben und abfragen.</span></div></div>`;
