@@ -1,0 +1,83 @@
+{
+  "name": "swissnand-it-toolbox",
+  "productName": "SWISSNAND IT Toolbox",
+  "version": "1.0.0",
+  "description": "70 IT-Werkzeuge in einer macOS-App – offline, schnell, Open Source.",
+  "main": "main.js",
+  "author": "SWISSNAND <hello@swissnand.ch>",
+  "license": "MIT",
+  "homepage": "https://github.com/swissnand/it-toolbox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swissnand/it-toolbox.git"
+  },
+  "keywords": [
+    "it",
+    "toolbox",
+    "macos",
+    "electron",
+    "devtools",
+    "network",
+    "subnet",
+    "swissnand"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "web": "npx --yes http-server src -p 8080 -c-1",
+    "dist": "electron-builder --mac dmg --universal",
+    "dist:arm": "electron-builder --mac dmg --arm64",
+    "dist:intel": "electron-builder --mac dmg --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "ch.swissnand.ittoolbox",
+    "productName": "SWISSNAND IT Toolbox",
+    "copyright": "© 2026 SWISSNAND",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "build/icon.png",
+      "target": [
+        "dmg"
+      ],
+      "darkModeSupport": true,
+      "hardenedRuntime": false,
+      "identity": null
+    },
+    "dmg": {
+      "title": "SWISSNAND IT Toolbox",
+      "artifactName": "SWISSNAND-IT-Toolbox-${version}-${arch}.${ext}",
+      "background": "build/dmg-background.png",
+      "iconSize": 110,
+      "window": {
+        "width": 640,
+        "height": 420
+      },
+      "contents": [
+        {
+          "x": 170,
+          "y": 205,
+          "type": "file"
+        },
+        {
+          "x": 470,
+          "y": 205,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1520"/><stop offset="1" stop-color="#05090e"/></linearGradient>
+    <radialGradient id="glow" cx=".85" cy="0" r=".8"><stop offset="0" stop-color="#004984" stop-opacity=".55"/><stop offset="1" stop-color="#004984" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#fff" stroke-opacity=".04"/></pattern>
+  </defs>
+  <rect width="640" height="420" fill="url(#bg)"/><rect width="640" height="420" fill="url(#grid)"/><rect width="640" height="420" fill="url(#glow)"/>
+  <text x="320" y="62" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="22" font-weight="700" fill="#fff" letter-spacing="3">SWISSNAND</text>
+  <text x="320" y="88" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="14" fill="#8fb4d6">IT Toolbox</text>
+  <path d="M262 205h104" stroke="#5aaaf0" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <path d="M362 193l14 12-14 12" fill="none" stroke="#5aaaf0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="352" text-anchor="middle" font-family="Helvetica Neue, Arial" font-size="13" fill="#7f8fa1">App in den Programme-Ordner ziehen</text>
+</svg>

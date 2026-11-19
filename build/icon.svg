@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d66ad"/><stop offset=".55" stop-color="#004984"/><stop offset="1" stop-color="#002a4d"/></linearGradient>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#001a33" flood-opacity=".45"/></filter>
+  </defs>
+  <g filter="url(#sh)">
+    <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#g)"/>
+    <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#s)"/>
+  </g>
+  <g transform="translate(100 100) scale(12.875)">
+    <g stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"><path d="M9 25h10M9 39h10M53 32h3"/><circle cx="49.3" cy="32" r="3.4"/></g>
+    <path d="M19 18h12.5a14 14 0 0 1 0 28H19z" fill="#fff"/>
+    <path d="M29 26h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="#004984"/>
+  </g>
+</svg>

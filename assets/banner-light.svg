@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef3f8"/></linearGradient>
+    <radialGradient id="glow" cx=".88" cy=".1" r=".55"><stop offset="0" stop-color="#004984" stop-opacity=".18"/><stop offset="1" stop-color="#004984" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#004984" stroke-opacity=".06"/></pattern>
+    <linearGradient id="logo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d66ad"/><stop offset="1" stop-color="#002a4d"/></linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="20" fill="url(#grid)"/>
+  <rect width="1200" height="320" rx="20" fill="url(#glow)"/>
+  <rect x=".5" y=".5" width="1199" height="319" rx="19.5" fill="none" stroke="#d6e0ea"/>
+  <path d="M1010 90h40v40h40v40h-40v40h-40v-40h-40v-40h40z" fill="#004984" opacity=".12"/>
+  <g transform="translate(80 62)">
+    <rect width="64" height="64" rx="15" fill="url(#logo)"/>
+    <g stroke="#fff" stroke-width="3.2" stroke-linecap="round" fill="none"><path d="M9 25h10M9 39h10M53 32h3"/><circle cx="49.3" cy="32" r="3.4"/></g>
+    <path d="M19 18h12.5a14 14 0 0 1 0 28H19z" fill="#fff"/><path d="M29 26h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="#004984"/>
+  </g>
+  <text x="164" y="92" font-size="17" font-weight="800" letter-spacing="4" fill="#004984">SWISSNAND</text>
+  <text x="162" y="128" font-size="38" font-weight="800" fill="#0e1924" letter-spacing="-0.5">IT Toolbox</text>
+  <text x="80" y="190" font-size="20" fill="#4d5e70">70 Werkzeuge für Admins, Entwickler und Techniker – in einer schnellen Mac-App.</text>
+  <rect x="80" y="232" width="97" height="32" rx="16" fill="rgba(0,73,132,0.08)" stroke="#004984" stroke-opacity=".35"/><text x="128.5" y="253" text-anchor="middle" font-size="14" font-weight="600" fill="#004984">70 Tools</text><rect x="187" y="232" width="171" height="32" rx="16" fill="rgba(0,73,132,0.08)" stroke="#004984" stroke-opacity=".35"/><text x="272.5" y="253" text-anchor="middle" font-size="14" font-weight="600" fill="#004984">macOS · Universal</text><rect x="368" y="232" width="138" height="32" rx="16" fill="rgba(0,73,132,0.08)" stroke="#004984" stroke-opacity=".35"/><text x="437.0" y="253" text-anchor="middle" font-size="14" font-weight="600" fill="#004984">Offline-first</text><rect x="516" y="232" width="130" height="32" rx="16" fill="rgba(0,73,132,0.08)" stroke="#004984" stroke-opacity=".35"/><text x="581.0" y="253" text-anchor="middle" font-size="14" font-weight="600" fill="#004984">Dark &amp; Light</text><rect x="656" y="232" width="114" height="32" rx="16" fill="rgba(0,73,132,0.08)" stroke="#004984" stroke-opacity=".35"/><text x="713.0" y="253" text-anchor="middle" font-size="14" font-weight="600" fill="#004984">MIT-Lizenz</text>
+</svg>
